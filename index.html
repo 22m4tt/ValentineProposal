@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Be My Valentine</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #ffe4e1;
+      text-align: center;
+      padding-top: 50px;
+    }
+    #message {
+      font-size: 2rem;
+      color: #ff69b4;
+      margin-top: 20px;
+    }
+    #cat-proposal {
+      width: 200px;
+      margin-top: 20px;
+    }
+    #buttons {
+      margin-top: 30px;
+    }
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      margin: 10px;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #ff1493;
+    }
+  </style>
+</head>
+<body>
+  <h1>Will you be my valentine, Ashmita?</h1>
+  <img id="cat-proposal" src="https://placekitten.com/200/300" alt="Cat with Flower">
+  <div id="buttons">
+    <button onclick="yesResponse()">Yes</button>
+    <button onclick="noResponse()">No</button>
+  </div>
+  <div id="message"></div>
+
+  <script>
+    function yesResponse() {
+      document.getElementById('message').innerText = 
+        "YAYYYYY BABYYYY I KNEW YOU WOULDD SAYY YESSS MY CUTIEEEEEE BABYYY";
+    }
+
+    function noResponse() {
+      alert("There's no 'No' option here 😘");
+    }
+  </script>
+</body>
+</html>
